@@ -1,0 +1,66 @@
+/* dark.css — alleen overrides */
+
+/* GENERAL */
+
+body {
+  background-color: #121416 !important;
+  color: #ECEBE8 !important;
+}
+
+.header {
+  background-color: #1E2023 !important;
+  border-color: #222426 !important;
+}
+
+.nav-item a {
+  color: #ECEBE8 !important;
+}
+
+.nav-item a::after {
+  background-color: #7E9DB5 !important;
+}
+
+.nav-item a:hover {
+  color: #7E9DB5 !important;
+}
+
+.footer {
+  background-color: #7E9DB5 !important;
+}
+
+
+input,
+textarea,
+select {
+  background: #ECEBE8 !important;
+  border: 1px solid #222426 !important;
+}
+
+input[type="submit"] {
+  background: #7C6854 !important;
+  color: #121416 !important;
+}
+
+input[type="submit"]:hover {
+  background: #7E9DB5 !important;
+  color: #121416 !important;
+}
+
+.aboutus-image {
+  background: #000 !important;
+}
+
+
+
+.morph-card .front {
+  background-color: #1E2023 !important;
+}
+
+.contact-container {
+    background-color: #1E2023 !important;
+
+}
+
+.subtext p {
+  color: #ECEBE8 !important;
+}
