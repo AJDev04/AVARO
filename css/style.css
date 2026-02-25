@@ -4,8 +4,8 @@
 .header {
 	position: fixed;
 	top: 18px;
-	left: 18px;
-	right: 18px;
+	left: 300px;
+	right: 300px;
 	z-index: 999;
 
 	display: flex;
@@ -33,7 +33,6 @@
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
 
-	border: 1px solid rgba(255, 255, 255, 0.14);
 	z-index: -1;
 }
 
