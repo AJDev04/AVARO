@@ -1,26 +1,21 @@
 /* --------------------------------------------------------
    FONT IMPORT
 -------------------------------------------------------- */
-/* Main Titel */
+/* Logo Font */
 @font-face {
-	font-family: "Azonix";
-	font-style: normal;
-	font-weight: normal;
-	src: local("Azonix"), url("../fonts/Azonix.otf") format("opentype");
+  font-family: "Azonix";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Azonix"),
+    url("../fonts/Azonix.otf") format("opentype");
 }
 
-/* Hoofdtitels */
-@font-face {
-	font-family: "Porscha";
-	font-style: normal;
-	font-weight: normal;
-	src: local("911 Porscha Bold"), url("../fonts/911v2b.woff") format("woff");
-}
-/* Subtitels */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+/* Headings / Subheadings */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
 /* Broodtekst */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
 
 /* --------------------------------------------------------
    BOX MODEL + BASE STYLES
@@ -28,77 +23,103 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-	background-color: #ecebe8;
-	background-color: #0a0d12;
-	color: #f5f7fa;
+  margin: 0;
+  font-family:
+    "Montserrat",
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    sans-serif;
+  background-color: #0d3047;
+  color: #ffffff;
 }
 
 :root {
-	/* tweak these in one place (or override per layout/theme) */
-	--wrapper-max: 100rem; /* ~1600px, but configurable */
-	--wrapper-inline-pad: clamp(1rem, 4vw, 3rem);
-	--wrapper-block-pad: clamp(1rem, 2vw, 2.5rem);
+  /* tweak these in one place (or override per layout/theme) */
+  --wrapper-max: 100rem; /* ~1600px, but configurable */
+  --wrapper-inline-pad: clamp(1rem, 4vw, 3rem);
+  --wrapper-block-pad: clamp(1rem, 2vw, 2.5rem);
 }
 
 /* Component */
 .wrapper {
-	inline-size: min(90vw, var(--wrapper-max));
-	margin-inline: auto;
-	padding: var(--wrapper-block-pad) var(--wrapper-inline-pad);
-	position: relative;
+  inline-size: min(90vw, var(--wrapper-max));
+  margin-inline: auto;
+  padding: var(--wrapper-block-pad) var(--wrapper-inline-pad);
+  position: relative;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-	/* avoid brittle 100% heights; use viewport with mobile-safe unit */
-	min-block-size: 100dvh;
+  /* avoid brittle 100% heights; use viewport with mobile-safe unit */
+  min-block-size: 100dvh;
 }
 h1 {
-	font-family: "Azonix", sans-serif;
-	font-size: 7rem;
-	letter-spacing: 10px;
-	color: #7e9db5;
+  font-family: "Sora", sans-serif;
+  font-size: 7rem;
+  letter-spacing: 10px;
+  color: #ffffff;
 }
 h2 {
-	font-family: "Michroma", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
-		sans-serif;
-	font-size: 2rem;
-	color: #f5f7fa;
+  font-family:
+    "Sora",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 2rem;
+  color: #ffffff;
 }
 
 h3 {
-	font-family: "Michroma", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
-		sans-serif;
-	font-size: 2rem;
-	font-size: 4rem;
-	color: #7e9db5;
-	text-align: center;
+  font-family:
+    "Sora",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 2rem;
+  font-size: 4rem;
+  color: #ffffff;
+  text-align: center;
 }
 
 h4 {
-	font-family: "Poppins", sans-serif;
-	font-size: 01rem;
-	color: #f5f7fa;
+  font-family: "Sora", sans-serif;
+  font-size: 01rem;
+  color: #ffffff;
 }
 
 .subtext p {
-	font-family: "Montserrat", sans-serif;
-	font-size: 1.5rem;
-	color: #8a93a3;
-	background-color: #f5f7fa;
-	text-align: center;
-	text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+  text-align: center;
 }
 
-.projecttitel h1 {
-	font-family: "Porscha", sans-serif;
-	font-size: 4rem;
-	color: #7e9db5;
+.hs-text h1 {
+  font-family: "Azonix", sans-serif;
+  font-size: 6rem;
+  color: #ffffff;
+}
+
+.hs-text h2 {
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  color: #ffffff;
+}
+.hs-text h2::first-letter {
+  color: #43c37f;
 }
