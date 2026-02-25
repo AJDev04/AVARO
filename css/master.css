@@ -3,12 +3,12 @@
 -------------------------------------------------------- */
 /* Logo Font */
 @font-face {
-  font-family: "Azonix";
-  font-style: normal;
-  font-weight: normal;
-  src:
-    local("Azonix"),
-    url("../fonts/Azonix.otf") format("opentype");
+	font-family: "Azonix";
+	font-style: normal;
+	font-weight: normal;
+	src:
+		local("Azonix"),
+		url("../fonts/Azonix.otf") format("opentype");
 }
 
 /* Headings / Subheadings */
@@ -23,103 +23,103 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family:
-    "Montserrat",
-    system-ui,
-    -apple-system,
-    Segoe UI,
-    Roboto,
-    sans-serif;
-  background-color: #0d3047;
-  color: #ffffff;
+	margin: 0;
+	font-family:
+		"Montserrat",
+		system-ui,
+		-apple-system,
+		Segoe UI,
+		Roboto,
+		sans-serif;
+	background-color: #0d3047;
+	color: #ffffff;
 }
 
 :root {
-  /* tweak these in one place (or override per layout/theme) */
-  --wrapper-max: 100rem; /* ~1600px, but configurable */
-  --wrapper-inline-pad: clamp(1rem, 4vw, 3rem);
-  --wrapper-block-pad: clamp(1rem, 2vw, 2.5rem);
+	/* tweak these in one place (or override per layout/theme) */
+	--wrapper-max: 100rem; /* ~1600px, but configurable */
+	--wrapper-inline-pad: clamp(1rem, 4vw, 3rem);
+	--wrapper-block-pad: clamp(1rem, 2vw, 2.5rem);
 }
 
 /* Component */
 .wrapper {
-  inline-size: min(90vw, var(--wrapper-max));
-  margin-inline: auto;
-  padding: var(--wrapper-block-pad) var(--wrapper-inline-pad);
-  position: relative;
+	inline-size: min(90vw, var(--wrapper-max));
+	margin-inline: auto;
+	padding: var(--wrapper-block-pad) var(--wrapper-inline-pad);
+	position: relative;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-  /* avoid brittle 100% heights; use viewport with mobile-safe unit */
-  min-block-size: 100dvh;
+	/* avoid brittle 100% heights; use viewport with mobile-safe unit */
+	min-block-size: 100dvh;
 }
 h1 {
-  font-family: "Sora", sans-serif;
-  font-size: 7rem;
-  letter-spacing: 10px;
-  color: #ffffff;
+	font-family: "Sora", sans-serif;
+	font-size: 7rem;
+	letter-spacing: 10px;
+	color: #ffffff;
 }
 h2 {
-  font-family:
-    "Sora",
-    system-ui,
-    -apple-system,
-    "Segoe UI",
-    Roboto,
-    Arial,
-    sans-serif;
-  font-size: 2rem;
-  color: #ffffff;
+	font-family:
+		"Sora",
+		system-ui,
+		-apple-system,
+		"Segoe UI",
+		Roboto,
+		Arial,
+		sans-serif;
+	font-size: 2rem;
+	color: #ffffff;
 }
 
 h3 {
-  font-family:
-    "Sora",
-    system-ui,
-    -apple-system,
-    "Segoe UI",
-    Roboto,
-    Arial,
-    sans-serif;
-  font-size: 2rem;
-  font-size: 4rem;
-  color: #ffffff;
-  text-align: center;
+	font-family:
+		"Sora",
+		system-ui,
+		-apple-system,
+		"Segoe UI",
+		Roboto,
+		Arial,
+		sans-serif;
+	font-size: 2rem;
+	font-size: 4rem;
+	color: #ffffff;
+	text-align: center;
 }
 
 h4 {
-  font-family: "Sora", sans-serif;
-  font-size: 01rem;
-  color: #ffffff;
+	font-family: "Sora", sans-serif;
+	font-size: 01rem;
+	color: #ffffff;
 }
 
 .subtext p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  color: #ffffff;
-  text-align: center;
-  text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.5rem;
+	color: #ffffff;
+	text-align: center;
+	text-align: center;
 }
 
 .hs-text h1 {
-  font-family: "Azonix", sans-serif;
-  font-size: 6rem;
-  color: #ffffff;
+	font-family: "Azonix", sans-serif;
+	font-size: 6rem;
+	color: #ffffff;
 }
 
 .hs-text h2 {
-  font-family: "Sora", sans-serif;
-  font-weight: 500;
-  font-size: 4rem;
-  color: #ffffff;
+	font-family: "Sora", sans-serif;
+	font-weight: 500;
+	font-size: 4rem;
+	color: #ffffff;
 }
 .hs-text h2::first-letter {
-  color: #43c37f;
+	color: #43c37f;
 }
