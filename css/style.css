@@ -492,7 +492,7 @@ input[type="submit"]:hover {
 -------------------------------------------------------- */
 
 .footer {
-	background: #0a2436;
+	background: #0d3047;
 	color: #ffffff;
 	padding-block: clamp(3rem, 4vh, 3rem); /* was 40px 0 */
 	width: 100%;

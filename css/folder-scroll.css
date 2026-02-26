@@ -19,8 +19,8 @@
 	position: sticky;
 	top: calc(80px + (var(--i) * 18px));
 	margin: 0 auto 28px;
-	padding: 18px;
 	border-radius: 28px;
+
 	transform-origin: 50% 80%;
 	will-change: transform;
 }
@@ -85,6 +85,7 @@
 
 /* meta should be ABOVE overlay */
 .card-meta {
+	display: flex;
 	position: absolute;
 	left: 18px;
 	right: 18px;
@@ -115,4 +116,59 @@
 /* make sure intro has no media */
 .work-card--intro .work-media {
 	display: none;
+}
+
+.actives {
+	box-shadow: 0 40px 80px rgba(0, 0, 0, 0.65);
+	transition:
+		box-shadow 0.35s ease,
+		transform 0.35s ease;
+}
+
+.actives:hover {
+	box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6);
+}
+.work-media {
+	position: relative;
+	overflow: hidden; /* clip gradient netjes in card */
+}
+
+.work-media::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+
+	/* radial gradient: midden transparant → randen donker */
+	background: radial-gradient(
+		circle at center,
+		rgba(0, 0, 0, 0) 20%,
+		rgba(0, 0, 0, 0.5) 55%,
+		rgba(0, 0, 0, 0.9) 100%
+	);
+
+	z-index: 1; /* boven image */
+}
+
+.work-media img {
+	position: relative;
+	z-index: 0;
+}
+
+.card-meta {
+	position: absolute;
+	z-index: 2; /* boven gradient */
+}
+
+.clickme {
+	padding: 8px 12px;
+	cursor: pointer;
+
+	align-self: center;
+
+	margin-left: auto; /* ⬅️ duwt dit item naar rechts */
+}
+.clickme a {
+	text-decoration: none;
+	color: #fff;
 }
